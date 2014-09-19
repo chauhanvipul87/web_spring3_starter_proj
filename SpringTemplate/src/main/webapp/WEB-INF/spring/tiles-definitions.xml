@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC 
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_2_1.dtd"> 
+    
+<!--  <!DOCTYPE tiles-definitions PUBLIC 
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "file://D:/jboss-5.0.0.GA/dtd/tiles-config_2_1.dtd">  -->
+    
+<tiles-definitions>
+
+	<!-- Default Main Template with CSS + JS -->
+	<definition name=".mainTemplate" template="/WEB-INF/templates/mainTemplate.jsp">
+		<put-attribute name="title"   value="BOES" type="string" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="topmenu" value="/WEB-INF/views/COMMONINCLUDE/topmenu.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/COMMONINCLUDE/sidebar.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footer.jsp" />
+		<put-attribute name="body"    value="/WEB-INF/templates/blank.jsp" />
+	</definition>
+ 	
+ 	<!-- Default Main Template without JS -->
+	<definition name=".mainTemplateWithoutJS" template="/WEB-INF/templates/mainTemplate.jsp">
+		<put-attribute name="title"   value="BOES" type="string" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="topmenu" value="/WEB-INF/views/COMMONINCLUDE/topmenu.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/COMMONINCLUDE/sidebar.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footerWithoutJs.jsp" />
+		<put-attribute name="body"    value="/WEB-INF/templates/blank.jsp" />
+	</definition>
+	
+	
+	
+	<!-- Default Main Template Full Span with CSS + JS -->
+	<definition name=".mainTemplateFullSpan" template="/WEB-INF/templates/mainTemplateFullSpan.jsp">
+		<put-attribute name="title"   value="BOES" type="string" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="topmenu" value="/WEB-INF/views/COMMONINCLUDE/topmenu.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footer.jsp" />
+		<put-attribute name="body"    value="/WEB-INF/templates/blank.jsp" />
+	</definition>
+ 	
+ 	<!-- Default Main Template Full Span without JS -->
+	<definition name=".mainTemplateFullSpanWithoutJS" template="/WEB-INF/templates/mainTemplateFullSpan.jsp">
+		<put-attribute name="title"   value="BOES" type="string" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="topmenu" value="/WEB-INF/views/COMMONINCLUDE/topmenu.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footerWithoutJs.jsp" />
+		<put-attribute name="body"    value="/WEB-INF/templates/blank.jsp" />
+	</definition>
+	
+ 	
+ 	<!-- Sub Template with CSS + JS  -->
+ 	<definition name=".simpleTemplate" template="/WEB-INF/templates/simpleTemplate.jsp">
+		<put-attribute name="title" value="BOES" type="string" />
+		<put-attribute name="body" value="/WEB-INF/templates/blank.jsp" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footer.jsp" />
+	</definition>
+	
+	<!-- Sub Template without JS  -->
+	<definition name=".simpleTemplateWithoutJS" template="/WEB-INF/templates/simpleTemplate.jsp">
+		<put-attribute name="title" value="BOES" type="string" />
+		<put-attribute name="body" value="/WEB-INF/templates/blank.jsp" />
+		<put-attribute name="header"  value="/WEB-INF/views/COMMONINCLUDE/header.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/views/COMMONINCLUDE/footerWithoutJs.jsp" />
+		
+	</definition>
+	
+
+	<!-- Mapping with Main Template -->
+	<!-- <definition name="registration-step1" extends=".simpleTemplateWithoutJS">
+		<put-attribute name="title" value="Registration" type="string" />
+		<put-attribute name="body" value="/WEB-INF/views/registration-step1.jsp" />
+	</definition> -->
+	
+	
+	
+</tiles-definitions>
